@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from '../../styles/Home.module.css'
+import Image from 'next/image'
 
 export const getStaticProps = async () => {
   const res = await fetch('https://newsapi.org/v2/top-headlines?country=id&apiKey=f11ad12345f6462a82aa2c6499251dfa');
@@ -20,11 +20,22 @@ export default function Berita({ porosBerita }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section>
-        <div>
+      <section className='w-full h-auto p-4 md:p-8 font-monts'>
+        <div className='grid grid-cols-4 gap-4'>
           {porosBerita.articles.map(berita => (
-            <div key={berita.id}>
-              <h1>{berita.author}</h1>
+            <div key={berita.id} className='border w-72 h-64 flex flex-col'>
+              <div className=''>
+                <img src={berita.urlToImage} alt="Image" className='w-full h-40' />
+              </div>
+              {/* Title */}
+              <div className='h-1/4 p-2 text-xs text-justify'>
+                <h1>{berita.title}</h1>
+              </div>
+
+              {/* Read more button */}
+              <div className='absolute p-2 text-xs bg-white'>
+                <p>Read More</p>
+              </div>
             </div>
           ))}
         </div>
