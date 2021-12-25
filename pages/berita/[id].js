@@ -45,7 +45,12 @@ const BeritaContent = () => {
 
       {/* Start here */}
       <section className='font-monts'>
-        <h1 className={`text-red-500 ${styles.porosBerita__header_title}`}> Halo </h1>
+        <div className={styles.porosBerita__header_frame}>
+          <div className={styles.porosBerita__header_background}>
+            <p className={styles.porosBerita__header_title}>FOSS</p>
+          </div>
+        </div>
+        {/* <h1 className={`text-red-500 ${styles.porosBerita__header_title}`}> Halo </h1> */}
       </section>
     </>
   );
