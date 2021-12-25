@@ -47,7 +47,9 @@ const BeritaContent = () => {
       <section className='font-monts'>
         <div className={styles.porosBerita__header_frame}>
           <div className={styles.porosBerita__header_background}>
-            <p className={styles.porosBerita__header_title}>FOSS</p>
+            <p className={styles.porosBerita__header_tag,styles.porosBerita__header_tagbox}>FOSS</p>
+            <h1 className={styles.porosBerita__header_title}>Lorem ipsum dolor sit amet consectetur adipiscing elit</h1>
+            <h2 className={styles.porosBerita__header_subtitle}>urna consequat felis vehicula class ultricies mollis dictumst, aenean non a in donec nulla. Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam</h2>
           </div>
         </div>
         {/* <h1 className={`text-red-500 ${styles.porosBerita__header_title}`}> Halo </h1> */}

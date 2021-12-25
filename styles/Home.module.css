@@ -1,6 +1,5 @@
 .porosBerita__header_frame {
   /* Blog Header */
-
   position: relative;
   width: 100%;
   height: 50vh;
@@ -11,27 +10,65 @@
   /* Background */
   background-repeat: no-repeat;
   width: 100%;
-  height: 50vh;
+  height:inherit;
   object-fit: cover;
+  background-image: url(./resourceEvan/titleBack.png);
 }
-.porosBerita__header_title {
+.porosBerita__header_tag {
   /* FASHION */
-
-  position: static;
+  position: relative;
   width: 42px;
   height: 12px;
   left: calc(50% - 42px/2);
   top: calc(50% - 12px/2);
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 10px;
-  line-height: 12px;
-  /* identical to box height */
+}
+.porosBerita__header_tagbox{
+  /* Tag box */
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  padding: 5px 10px;
+
+  position: relative;
+  width: 62px;
+  height: 22px;
+  left: calc(50% - 62px/2);
+  top: calc(20% - 22px/2);
+
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: #dddddd;
+}
+.porosBerita__header_title {
+  /* Title Text */
+  position: relative;
+  height: 92px;
+  min-height: 164px;
+  width: 60vw;
+  top: calc(30% - 60px/2);
+  left: calc(50% - 60vw/2);
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 46px;
   text-align: center;
 
-  color: #000000;
+  color: #FFFFFF;
+}
+.porosBerita__header_subtitle {
+  /* Subtitle Text */
+  position: relative;
+  float: top;
+  height: 40px;
+  top: calc(15% - 40px/2);
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  /* or 167% */
+  text-align: center;
+
+  color: #E5E5E5;
 }
