@@ -95,9 +95,89 @@
   font-size: 40px;
   color: #D4A373;
 }
-.porosBerita__footer_related-post{
+.porosBerita__content_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  width: 70vw;
+  left: calc(50% - 70vw/2);
+  top: 50px;
+}
+.porosBerita__content_article {
+  /* Artikel - normal */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  color: #495057;
+}
+.porosBerita__content_pict_frame{
+  /* Image */
+  margin: 10px 20px 10px 10px;
+  float: left;
+  position: relative;
+  width: 420px;
+  height: 300px;
+  background: #C4C4C4;
+  border-radius: 5px;
+}
+.porosBerita__content_pict{
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.porosBerita__content_footer_tags {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  width: 70vw;
+  left: calc(50% - 70vw/2);
+  top: 60px;
+}
+.porosBerita__content_tags_minor{
+  top: auto;
+  font-size: 14px;
+  position: relative;
+  margin: 10px;
+  border: 2px solid lightgray;
+  padding: 2px 10px 2px 10px;
+  border-radius: 8px;
+  color: #495057;
+}
+.porosBerita__content_divider {
+  /* Line */
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  width: 70vw;
+  left: calc(50% - 70vw/2);
+  top: 70px;
+  border: 0.5px solid #C4C4C4;
+}
 
+
+@media screen and (max-width:1024px) {
+  .porosBerita__header_subtitle{
+    top: 25%;
+  }
+  .porosBerita__header_writer{
+    top: 32%;
+  }
+}
+@media screen and (max-width:1024px),screen and (max-height:600px) {
+  .porosBerita__header_subtitle{
+    top: 10%;
+  }
+  .porosBerita__header_writer{
+    top: 14%;
+  }
 }
 @media screen and (max-width:870px) {
   .porosBerita__header_maintagbox{
@@ -122,6 +202,18 @@
   .porosBerita__content_prominent{
     font-size: 30px;
     color: #D4A373;
+  }
+  .porosBerita__header_maintagbox{
+    font-size: 18px;
+    width: 80px;
+    height: 30px;
+    left: calc(50% - 80px/2);
+    top: calc(15% - 30px/2);  
+    align-items: center; 
+  }
+  .porosBerita__content_tags_minor{
+    margin: 8px;
+    font-size: 13px;
   }
 }
 @media screen and (max-width:400px) {
@@ -148,24 +240,13 @@
     font-size: 25px;
     color: #D4A373;
   }
-}
-.porosBerita__content_container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  width: 70vw;
-  left: calc(50% - 70vw/2);
-  top: 50px;
-}
-.porosBerita__content_article {
-  /* Artikel - normal */
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 25px;
-  color: #495057;
+  .porosBerita__header_maintagbox{
+    font-size: 15px;
+    width: 56px;
+    height: 26px;
+    left: calc(50% - 46px/2);
+    top: calc(15% - 16px/2);   
+  }
 }
 @media screen and (max-width:320px) {
   .porosBerita__header_title{
@@ -189,5 +270,73 @@
   }
   .porosBerita__content_container {
     top: 20px;
+  }
+  .porosBerita__header_maintagbox{
+    font-size: 10px;
+    width: 46px;
+    height: 16px;
+    left: calc(50% - 46px/2);
+    top: calc(15% - 16px/2);   
+  }
+  .porosBerita__content_tags_minor{
+    margin: 5px;
+    padding: 0px 4px 0px 4px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-height: 567px){
+  .porosBerita__header_frame {
+    height: 62vh;
+  }
+  .porosBerita__header_maintagbox{
+    font-size: 14px;
+    top: calc(10% - 14px/2);
+  }
+  .porosBerita__header_title{
+    font-size: 24px;
+    width: 80vw;
+    left: calc(50% - 80vw/2);
+    top: 15%;
+    line-height: 27px;
+    min-height: 144px;
+  }
+  .porosBerita__header_subtitle{
+    max-width: 60vw;
+    left: calc(50% - 60vw/2);
+    top: -40px;
+  }
+  .porosBerita__header_writer {
+    top: -8%;
+  }
+  .porosBerita__content_prominent{
+    font-size: 30px;
+    color: #D4A373;
+  }
+}
+@media screen and (max-height:300px){
+  .porosBerita__header_title{
+    font-size: 18px;
+    width: 80vw;
+    left: calc(50% - 80vw/2);
+    top: 20px;
+    line-height: 27px;
+    min-height: 144px;
+  }
+  .porosBerita__header_subtitle{
+    font-size: 10px;
+    max-width: 70vw;
+    left: calc(50% - 70vw/2);
+    top: -5.5rem;
+  }
+  .porosBerita__header_writer {
+    top: -50%;
+    font-size: 11px;
+  }
+  .porosBerita__header_maintagbox{
+    font-size: 10px;
+    width: 46px;
+    height: 16px;
+    left: calc(50% - 46px/2);
+    top: calc(15% - 16px/2);   
   }
 }
