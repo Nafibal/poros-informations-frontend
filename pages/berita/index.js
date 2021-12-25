@@ -37,7 +37,7 @@ export default function Berita({ porosBerita }) {
 
                   {/* Read more button */}
                   <div className='h-10 border-t p-2 text-xs bg-white flex items-center'>
-                    <p>Read More</p>
+                    <p>Read More...</p>
                   </div>
                 </div>
 
