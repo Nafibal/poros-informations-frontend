@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Card from '../../components/Card'
 
 export const getStaticProps = async () => {
   const res = await fetch('https://newsapi.org/v2/top-headlines?country=id&apiKey=f11ad12345f6462a82aa2c6499251dfa');
@@ -23,26 +24,30 @@ export default function Berita({ porosBerita }) {
       <section className='w-full h-auto p-4 md:p-8 font-monts'>
         <div className='grid grid-cols-4 gap-4'>
           {porosBerita.articles.map(berita => (
-            <Link href={'/berita/' + berita.title} key={berita.id} className=' w-72 h-64 flex flex-col'>
-              <div className='border'>
-                <div>
-                  <img src={berita.urlToImage} alt="Image" className='w-full h-40' />
-                </div>
 
-                <div className='flex flex-col justify-between'>
-                  {/* Title */}
-                  <div className='h-24 p-2 text-xs text-justify overflow-hidden'>
-                    <h1>{berita.title}</h1>
-                  </div>
+            <Card key={berita.id} urlToImage={berita.urlToImage} title={berita.title} />
 
-                  {/* Read more button */}
-                  <div className='h-10 border-t p-2 text-xs bg-white flex items-center'>
-                    <p>Read More...</p>
-                  </div>
-                </div>
 
-              </div>
-            </Link>
+            // <Link href={'/berita/' + berita.title} key={berita.id} className=' w-72 h-64 flex flex-col'>
+            //   <div className='border'>
+            //     <div>
+            //       <img src={berita.urlToImage} alt="Image" className='w-full h-40' />
+            //     </div>
+
+            //     <div className='flex flex-col justify-between'>
+            //       {/* Title */}
+            //       <div className='h-24 p-2 text-xs text-justify overflow-hidden'>
+            //         <h1>{berita.title}</h1>
+            //       </div>
+
+            //       {/* Read more button */}
+            //       <div className='h-10 border-t p-2 text-xs bg-white flex items-center'>
+            //         <p>Read More...</p>
+            //       </div>
+            //     </div>
+
+            //   </div>
+            // </Link>
           ))}
         </div>
       </section>
