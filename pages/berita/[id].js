@@ -112,22 +112,39 @@ const BeritaContent = () => {
         <div className={styles.porosBerita__footer_posts_lain}>
           <div className={styles.porosBerita__footer_posts_card_image}>
             <button className={styles.porosBerita__content_pict}>
-              <a href=''>
-                <button className={styles.porosBerita__footer_maintag}><p>FOSS</p></button>
+              <a href='#1'>
+                <a href='#2'>
+                  <button className={styles.porosBerita__footer_maintag}><p>FOSS</p></button>
+                </a>
+                <p className={styles.porosBerita__footer_tanggal}>22 - 12 - 2021</p>
+                <p className={styles.porosBerita__footer_title}>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                <p className={styles.porosBerita__footer_subtitle}>urna consequat felis vehicula class ultricies mollis dictumst, aenean non a in donec nulla. Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam</p>
                 <img src='https://1734811051.rsc.cdn77.org/data/images/full/379470/2022-bmw-m5-cs.png?w=571?w=650' className={styles.porosBerita__content_pict}/>
               </a>
             </button>
           </div>
           <div className={styles.porosBerita__footer_posts_card_image}>
             <button className={styles.porosBerita__content_pict}>
-              <a href=''>
-                <img src='https://i.imgur.com/QA9c2bs.jpeg' className={styles.porosBerita__content_pict}/>
+            <a href='#1'>
+              <a href='#2'>
+                <button className={styles.porosBerita__footer_maintag}><p>FOSS</p></button>
               </a>
+              <p className={styles.porosBerita__footer_tanggal}>22 - 12 - 2021</p>
+              <p className={styles.porosBerita__footer_title}>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+              <p className={styles.porosBerita__footer_subtitle}>urna consequat felis vehicula class ultricies mollis dictumst, aenean non a in donec nulla. Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam</p>
+              <img src='https://i.imgur.com/QA9c2bs.jpeg' className={styles.porosBerita__content_pict}/>
+            </a>
             </button>
           </div>
           <div className={styles.porosBerita__footer_posts_card_image}>
             <button className={styles.porosBerita__content_pict}>
-              <a href=''>
+              <a href='#1'>
+                <a href='#2'>
+                  <button className={styles.porosBerita__footer_maintag}><p>FOSS</p></button>
+                </a>
+                <p className={styles.porosBerita__footer_tanggal}>22 - 12 - 2021</p>
+                <p className={styles.porosBerita__footer_title}>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                <p className={styles.porosBerita__footer_subtitle}>urna consequat felis vehicula class ultricies mollis dictumst, aenean non a in donec nulla. Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam</p>
                 <img src='https://i.ytimg.com/vi/_RJ2lBomU0g/maxresdefault.jpg' className={styles.porosBerita__content_pict}/>
               </a>
             </button>
