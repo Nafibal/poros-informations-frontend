@@ -87,7 +87,24 @@ const BeritaContent = () => {
           </button>
           <div className={styles.porosBerita__content_writer_socmed_frame}>
             <button className={styles.porosBerita__content_writer_socmed}>
-              <img src='https://github.com/Briiad/poros-informations-frontend/blob/punyaEvan/styles/resourceEvan/Facebook.svg'/>
+              <a href=''>
+                <img src='https://raw.githubusercontent.com/Briiad/poros-informations-frontend/1774dba19c86f79b13c34573d4b2e0592b9d5098/styles/resourceEvan/Facebook.svg'/>
+              </a>
+            </button>
+            <button className={styles.porosBerita__content_writer_socmed}>
+              <a href=''>
+                <img src='https://raw.githubusercontent.com/Briiad/poros-informations-frontend/1774dba19c86f79b13c34573d4b2e0592b9d5098/styles/resourceEvan/Facebook.svg'/>
+              </a>
+            </button>
+            <button className={styles.porosBerita__content_writer_socmed}>
+              <a href=''>
+                <img src='https://raw.githubusercontent.com/Briiad/poros-informations-frontend/1774dba19c86f79b13c34573d4b2e0592b9d5098/styles/resourceEvan/Facebook.svg'/>
+              </a>
+            </button>
+            <button className={styles.porosBerita__content_writer_socmed}>
+              <a href=''>
+                <img src='https://raw.githubusercontent.com/Briiad/poros-informations-frontend/1774dba19c86f79b13c34573d4b2e0592b9d5098/styles/resourceEvan/Facebook.svg'/>
+              </a>
             </button>
           </div>
         </div>
