@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
+import React, { Component }  from 'react';
 
 // export const getStaticPaths = async () => {
 //   const res = await fetch('https://newsapi.org/v2/top-headlines?country=id&apiKey=f11ad12345f6462a82aa2c6499251dfa');
@@ -47,10 +48,10 @@ const BeritaContent = () => {
       <section className='font-monts'>
         <div className={styles.porosBerita__header_frame}>
           <div className={styles.porosBerita__header_background}>
-            <p className={styles.porosBerita__header_maintag,styles.porosBerita__header_maintagbox}>FOSS</p>
+            <button className={styles.porosBerita__header_maintagbox}><p>FOSS</p></button>
             <h1 className={styles.porosBerita__header_title}>Lorem ipsum dolor sit amet consectetur adipiscing elit</h1>
             <h2 className={styles.porosBerita__header_subtitle}>urna consequat felis vehicula class ultricies mollis dictumst, aenean non a in donec nulla. Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam</h2>
-            <p className={styles.porosBerita__header_writer}>Oleh : Lorem Ipsum</p>
+            <p className={styles.porosBerita__header_writer}>Oleh : Lorem Ipsum (26 - 12 - 2021)</p>
           </div>
         </div>
         <div className={styles.porosBerita__content_container}>
@@ -58,11 +59,96 @@ const BeritaContent = () => {
             Lorem ipsum dolor sit amet consectetur adipiscing elit, urna consequat felis vehicula class ultricies mollis dictumst, aenean non a in donec nulla. Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam, integer placerat et turpis mi eros nec lobortis taciti, vehicula nisl litora tellus ligula porttitor metus.<br/><br/>Vivamus integer non suscipit taciti mus etiam at primis tempor sagittis sit, euismod libero facilisi aptent elementum felis blandit cursus gravida sociis erat ante, eleifend lectus nullam dapibus netus feugiat curae curabitur est ad. Massa curae fringilla porttitor quam sollicitudin iaculis aptent leo ligula euismod dictumst, orci penatibus mauris eros etiam praesent erat volutpat posuere hac. Metus fringilla nec ullamcorper odio aliquam lacinia conubia mauris tempor, etiam ultricies proin quisque lectus sociis id tristique, integer phasellus taciti pretium adipiscing tortor sagittis ligula.<br/><br/>
           </p>
           <p className={styles.porosBerita__content_prominent}>
-            "Mollis pretium lorem primis senectus habitasse"
+            "Mollis pretium lorem primis senectus habitasse"<br/>
           </p>
           <p className={styles.porosBerita__content_article}>
-            <br/>Mollis pretium lorem primis senectus habitasse lectus scelerisque donec, ultricies tortor suspendisse adipiscing fusce morbi volutpat pellentesque, consectetur mi risus molestie curae malesuada cum. Dignissim lacus convallis massa mauris enim ad mattis magnis senectus montes, mollis taciti phasellus accumsan bibendum semper blandit suspendisse faucibus nibh est, metus lobortis morbi cras magna vivamus per risus fermentum. Dapibus imperdiet praesent magnis ridiculus congue gravida curabitur dictum sagittis, enim et magna sit inceptos sodales parturient pharetra mollis, aenean vel nostra tellus commodo pretium sapien sociosqu.
+            <div className={styles.porosBerita__content_pict_frame}>
+              <img className={styles.porosBerita__content_pict} src='https://nuvomagazine.scdn2.secure.raxcdn.com/wp-content/uploads/2018/08/P90315983-highRes.jpg'/>
+            </div>
+            Mollis pretium lorem primis senectus habitasse lectus scelerisque donec, ultricies tortor suspendisse adipiscing fusce morbi volutpat pellentesque, consectetur mi risus molestie curae malesuada cum. Dignissim lacus convallis massa mauris enim ad mattis magnis senectus montes, mollis taciti phasellus accumsan bibendum semper blandit suspendisse faucibus nibh est, metus lobortis morbi cras magna vivamus per risus fermentum. Dapibus imperdiet praesent magnis ridiculus congue gravida curabitur dictum sagittis, enim et magna sit inceptos sodales parturient pharetra mollis, aenean vel nostra tellus commodo pretium sapien sociosqu. urna consequat felis vehicula class ultricies mollis dictumst, aenean non a in donec nulla. Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam, integer placerat et turpis mi eros nec lobortis taciti, vehicula nisl litora tellus ligula porttitor metus. Vivamus integer non suscipit taciti mus etiam at primis tempor sagittis sit, euismod libero facilisi aptent elementum felis blandit cursus gravida sociis erat ante, eleifend lectus nullam dapibus netus feugiat curae curabitur est ad.<br/><br/>Massa curae fringilla porttitor quam sollicitudin iaculis aptent leo ligula euismod dictumst, orci penatibus mauris eros etiam praesent erat volutpat posuere hac. Metus fringilla nec ullamcorper odio aliquam lacinia conubia mauris tempor, etiam ultricies proin quisque lectus sociis id tristique, integer phasellus taciti pretium adipiscing tortor sagittis ligula.
           </p>
+        </div>
+        <br/>
+        <div className={styles.porosBerita__content_footer_frame}>
+          <button><div className={styles.porosBerita__content_tags_minor}>FOSS</div></button>
+          <button><div className={styles.porosBerita__content_tags_minor}>POROS</div></button>
+          <button><div className={styles.porosBerita__content_tags_minor}>LOREM</div></button>
+        </div>
+        <br/>
+        <div className={styles.porosBerita__content_footer_frame}>
+          <button className={styles.porosBerita__content_button_large}>
+            <div className={styles.porosBerita__content_writer_pic_frame}>
+              <img src='https://manofmany.com/wp-content/uploads/2020/07/Mia-Khalifa-3.jpg' className={styles.porosBerita__content_writer_pic}/>
+            </div>
+            <div className={styles.porosBerita__content_writer_frame}>
+              <p className={styles.porosBerita__content_writer_name}>Lorem Ipsum Dolor</p>
+              <p className={styles.porosBerita__content_writer_desc}>Writer for POROS FILKOM</p>
+            </div>
+          </button>
+          <div className={styles.porosBerita__content_writer_socmed_frame}>
+            <button className={styles.porosBerita__content_writer_socmed}>
+              <a href=''>
+                <img src='https://raw.githubusercontent.com/Briiad/poros-informations-frontend/1774dba19c86f79b13c34573d4b2e0592b9d5098/styles/resourceEvan/Facebook.svg'/>
+              </a>
+            </button>
+            <button className={styles.porosBerita__content_writer_socmed}>
+              <a href=''>
+                <img src='https://raw.githubusercontent.com/Briiad/poros-informations-frontend/055a1f9d1c08df1e07b1c1165b8f1606a361ae4f/styles/resourceEvan/Twitter.svg'/>
+              </a>
+            </button>
+            <button className={styles.porosBerita__content_writer_socmed}>
+              <a href=''>
+                <img src='https://raw.githubusercontent.com/Briiad/poros-informations-frontend/055a1f9d1c08df1e07b1c1165b8f1606a361ae4f/styles/resourceEvan/Pinterest.svg'/>
+              </a>
+            </button>
+            <button className={styles.porosBerita__content_writer_socmed}>
+              <a href=''>
+                <img src='https://raw.githubusercontent.com/Briiad/poros-informations-frontend/055a1f9d1c08df1e07b1c1165b8f1606a361ae4f/styles/resourceEvan/Behance.svg'/>
+              </a>
+            </button>
+          </div>
+        </div>
+        <p className={styles.porosBerita__footer_postlain}>Post Terkait</p><br/><br/>
+        <div className={styles.porosBerita__footer_posts_lain}>
+          <div className={styles.porosBerita__footer_posts_card_image}>
+            <button className={styles.porosBerita__content_pict}>
+              <a href='#1'>
+                <a href='#2'>
+                  <button className={styles.porosBerita__footer_maintag}><p>FOSS</p></button>
+                </a>
+                <p className={styles.porosBerita__footer_tanggal}>22 - 12 - 2021</p>
+                <p className={styles.porosBerita__footer_title}>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                <p className={styles.porosBerita__footer_subtitle}>urna consequat felis vehicula class ultricies mollis dictumst, aenean non a in donec nulla. Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam</p>
+                <img src='https://1734811051.rsc.cdn77.org/data/images/full/379470/2022-bmw-m5-cs.png?w=571?w=650' className={styles.porosBerita__content_pict}/>
+              </a>
+            </button>
+          </div>
+          <div className={styles.porosBerita__footer_posts_card_image}>
+            <button className={styles.porosBerita__content_pict}>
+            <a href='#1'>
+              <a href='#2'>
+                <button className={styles.porosBerita__footer_maintag}><p>FOSS</p></button>
+              </a>
+              <p className={styles.porosBerita__footer_tanggal}>22 - 12 - 2021</p>
+              <p className={styles.porosBerita__footer_title}>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+              <p className={styles.porosBerita__footer_subtitle}>urna consequat felis vehicula class ultricies mollis dictumst, aenean non a in donec nulla. Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam</p>
+              <img src='https://i.imgur.com/QA9c2bs.jpeg' className={styles.porosBerita__content_pict}/>
+            </a>
+            </button>
+          </div>
+          <div className={styles.porosBerita__footer_posts_card_image}>
+            <button className={styles.porosBerita__content_pict}>
+              <a href='#1'>
+                <a href='#2'>
+                  <button className={styles.porosBerita__footer_maintag}><p>FOSS</p></button>
+                </a>
+                <p className={styles.porosBerita__footer_tanggal}>22 - 12 - 2021</p>
+                <p className={styles.porosBerita__footer_title}>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                <p className={styles.porosBerita__footer_subtitle}>urna consequat felis vehicula class ultricies mollis dictumst, aenean non a in donec nulla. Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam</p>
+                <img src='https://i.ytimg.com/vi/_RJ2lBomU0g/maxresdefault.jpg' className={styles.porosBerita__content_pict}/>
+              </a>
+            </button>
+          </div>
         </div>
         {/* <h1 className={`text-red-500 ${styles.porosBerita__header_title}`}> Halo </h1> */}
       </section>
