@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+.card {
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.486);
+  overflow: hidden;
+  transition: 0.25s;
+  background-color: rgb(31, 31, 31);
+  position: relative;
+}
+.card:hover {
+  transform: scale(1.025);
+}
+.card__info {
+  border-top: 4px solid rgb(91, 218, 91);
+  padding: 0;
+  text-align: center;
+}
+.card__title {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.123);
+}
+.card__modal {
+  position: absolute;
+  inset: 0 0 0 0;
+  background-color: rgba(0, 0, 0, 0.76);
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  transition: 0.25s;
+}
+.card:hover .card__modal {
+  opacity: 1;
+}
+.card__button {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 5px 10px;
+  transition: 0.25s;
+}
+.card__button:hover {
+  color: rgb(91, 218, 91);
+  border: 2px solid rgb(91, 218, 91);
+  cursor: pointer;
+}
