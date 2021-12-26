@@ -14,14 +14,6 @@
   object-fit: cover;
   background-image: url(./resourceEvan/titleBack.png);
 }
-.porosBerita__header_maintag {
-  /* FASHION */
-  position: relative;
-  width: 42px;
-  height: 12px;
-  left: calc(50% - 42px/2);
-  top: calc(50% - 12px/2);
-}
 .porosBerita__header_maintagbox{
   /* maintag box */
   display: flex;
@@ -129,7 +121,7 @@
   object-fit: cover;
   border-radius: 5px;
 }
-.porosBerita__content_footer_tags {
+.porosBerita__content_footer_frame {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -149,19 +141,62 @@
   border-radius: 8px;
   color: #495057;
 }
-.porosBerita__content_divider {
-  /* Line */
+.porosBerita__content_writer_frame {
   position: relative;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  width: 70vw;
-  left: calc(50% - 70vw/2);
-  top: 70px;
-  border: 0.5px solid #C4C4C4;
+  flex-direction: column;
+  float: left;
+  padding: 5px;
 }
+.porosBerita__content_writer_pic_frame{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #C4C4C4;
+}
+.porosBerita__content_writer_pic{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.porosBerita__content_writer_name {
+  padding: 0px 10px 0px 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: left;
 
+  color: #343A40;
+}
+.porosBerita__content_writer_desc {
+  padding: 0px 10px 0px 10px;
+  font-style: normal;
+  font-weight: 490;
+  font-size: 11px;
+  line-height: 20px;
+  text-align: left;
+
+  color: #5b6064;
+}
+.porosBerita__content_button_large {
+  display: flex;
+  flex-direction: row;
+}
+.porosBerita__content_writer_socmed_frame {
+  /* Share Icons */
+  margin: 10px 0px 0px 20px;
+}
+.porosBerita__content_writer_socmed{
+  float: left;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background: #495057;
+
+}
 
 @media screen and (max-width:1024px) {
   .porosBerita__header_subtitle{
@@ -170,8 +205,12 @@
   .porosBerita__header_writer{
     top: 32%;
   }
+  .porosBerita__content_pict_frame{
+    width: 100%;
+    height: 10%;
+  }
 }
-@media screen and (max-width:1024px),screen and (max-height:600px) {
+@media screen and (max-width:1023px),screen and (max-height:600px) {
   .porosBerita__header_subtitle{
     top: 10%;
   }
@@ -282,6 +321,20 @@
     margin: 5px;
     padding: 0px 4px 0px 4px;
     font-size: 13px;
+  }
+  .porosBerita__content_writer_frame {
+    padding: 2px;
+  }
+  .porosBerita__content_writer_pic_frame{
+    width: 42px;
+    height: 42px;
+  }
+  .porosBerita__content_writer_name {
+    font-size: 10px;
+  }
+  .porosBerita__content_writer_desc {
+    font-size: 10px;
+    line-height: 15px;
   }
 }
 @media screen and (max-height: 567px){
