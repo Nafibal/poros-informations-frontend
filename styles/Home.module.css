@@ -195,7 +195,54 @@
   width: 25px;
   height: 25px;
   margin: 0px 5px 5px 5px;
+}
+.porosBerita__footer_posts_lain {
+  /* Related Posts */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  overflow-x: initial;
+  position: relative;
+  width: 70vw;
+  left: calc(50% - 70vw/2);
+}
+.porosBerita__footer_postlain{
+  /* Related Posts */
+  position: relative;
+  width: 100%;
+  margin-top: 150px;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #495057;
+}
+.porosBerita__footer_posts_card_image{
+  float: left;
+  margin: 0px 20px 0px 20px;
+  position: relative;
+  width: 31.2%;
+  margin: 10px;
+}
+.porosBerita__footer_maintag {
+  /* maintag box */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
 
+  position: relative;
+  width: 62px;
+  height: 22px;
+  margin-right: 5px;
+  margin-top: 5px;
+
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: #dddddd;
 }
 
 @media screen and (max-width:1024px) {
@@ -219,6 +266,9 @@
   }
 }
 @media screen and (max-width:870px) {
+  .porosBerita__footer_posts_card_image{
+    width: 100%;
+  }
   .porosBerita__header_maintagbox{
     top: calc(16% - 22px/2);
   }
@@ -288,6 +338,9 @@
   }
 }
 @media screen and (max-width:320px) {
+  .porosBerita__footer_posts_card_image{
+    width: 100%;
+  }
   .porosBerita__header_title{
     font-size: 20px;
     width: 80vw;

@@ -51,7 +51,7 @@ const BeritaContent = () => {
             <button className={styles.porosBerita__header_maintagbox}><p>FOSS</p></button>
             <h1 className={styles.porosBerita__header_title}>Lorem ipsum dolor sit amet consectetur adipiscing elit</h1>
             <h2 className={styles.porosBerita__header_subtitle}>urna consequat felis vehicula class ultricies mollis dictumst, aenean non a in donec nulla. Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam</h2>
-            <p className={styles.porosBerita__header_writer}>Oleh : Lorem Ipsum</p>
+            <p className={styles.porosBerita__header_writer}>Oleh : Lorem Ipsum (26 - 12 - 2021)</p>
           </div>
         </div>
         <div className={styles.porosBerita__content_container}>
@@ -93,17 +93,42 @@ const BeritaContent = () => {
             </button>
             <button className={styles.porosBerita__content_writer_socmed}>
               <a href=''>
-                <img src='https://raw.githubusercontent.com/Briiad/poros-informations-frontend/1774dba19c86f79b13c34573d4b2e0592b9d5098/styles/resourceEvan/Facebook.svg'/>
+                <img src='https://raw.githubusercontent.com/Briiad/poros-informations-frontend/055a1f9d1c08df1e07b1c1165b8f1606a361ae4f/styles/resourceEvan/Twitter.svg'/>
               </a>
             </button>
             <button className={styles.porosBerita__content_writer_socmed}>
               <a href=''>
-                <img src='https://raw.githubusercontent.com/Briiad/poros-informations-frontend/1774dba19c86f79b13c34573d4b2e0592b9d5098/styles/resourceEvan/Facebook.svg'/>
+                <img src='https://raw.githubusercontent.com/Briiad/poros-informations-frontend/055a1f9d1c08df1e07b1c1165b8f1606a361ae4f/styles/resourceEvan/Pinterest.svg'/>
               </a>
             </button>
             <button className={styles.porosBerita__content_writer_socmed}>
               <a href=''>
-                <img src='https://raw.githubusercontent.com/Briiad/poros-informations-frontend/1774dba19c86f79b13c34573d4b2e0592b9d5098/styles/resourceEvan/Facebook.svg'/>
+                <img src='https://raw.githubusercontent.com/Briiad/poros-informations-frontend/055a1f9d1c08df1e07b1c1165b8f1606a361ae4f/styles/resourceEvan/Behance.svg'/>
+              </a>
+            </button>
+          </div>
+        </div>
+        <p className={styles.porosBerita__footer_postlain}>Post Terkait</p><br/><br/>
+        <div className={styles.porosBerita__footer_posts_lain}>
+          <div className={styles.porosBerita__footer_posts_card_image}>
+            <button className={styles.porosBerita__content_pict}>
+              <a href=''>
+                <button className={styles.porosBerita__footer_maintag}><p>FOSS</p></button>
+                <img src='https://1734811051.rsc.cdn77.org/data/images/full/379470/2022-bmw-m5-cs.png?w=571?w=650' className={styles.porosBerita__content_pict}/>
+              </a>
+            </button>
+          </div>
+          <div className={styles.porosBerita__footer_posts_card_image}>
+            <button className={styles.porosBerita__content_pict}>
+              <a href=''>
+                <img src='https://i.imgur.com/QA9c2bs.jpeg' className={styles.porosBerita__content_pict}/>
+              </a>
+            </button>
+          </div>
+          <div className={styles.porosBerita__footer_posts_card_image}>
+            <button className={styles.porosBerita__content_pict}>
+              <a href=''>
+                <img src='https://i.ytimg.com/vi/_RJ2lBomU0g/maxresdefault.jpg' className={styles.porosBerita__content_pict}/>
               </a>
             </button>
           </div>
